@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà xinh - TTT-03</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/item.css">
+</head>
+<body>
+<!-- header -->
+<header class="header">
+    <div class="header__nav">
+        <div class="header__nav__left">
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="#">Giảm giá</a>
+                </li>
+                <li>
+                    <a href="#">Bán chạy nhất</a>
+                </li>
+                <li>
+                    <a href="#">Sản phẩm mới</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header__nav__right">
+            <ul>
+                <li>
+                    <a href="#">Đăng nhập</a>
+                </li>
+                <li>
+                    <a href="#">Đăng ký</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header__container">
+        <div class="header__container__logo">
+            <div class="header__container__thumb">
+                <a href="../index.html">
+                    <img src="../img/konn.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="header__container__search">
+            <form action="">
+                <input type="search" name="" id="" placeholder="Search...">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="header__container__cart">
+            <a href="#" class="header__container__cart__link">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Giỏ hàng</span>
+                <span>(0)</span>
+            </a>
+        </div>
+    </div>
+<!-- Navbar -->
+    <div class="nav" id="nav">
+        <ul>
+            <li class="nav__item">
+                <a href="#" class="nav__link">
+                    <i class="fas fa-home"></i>
+                    Trang chủ
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#footer" class="nav__link">Giới thiệu</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Sản phẩm</a>
+                <ul>
+                    <li>
+                        <a href="../TranhTreoTuong.html">Tranh treo tường</a>
+                    </li>
+
+                    <li>
+                        <a href="../ThamLotSan.html">Thảm lót sàn</a>
+                    </li>
+
+                    <li>
+                        <a href="../DoTrangTri.html">Đồ trang trí</a>
+                    </li>
+
+                    <li>
+                        <a href="../KeVaTu.html">Kệ & tủ</a>
+                    </li>
+
+                    <li>
+                        <a href="../BanGhe.html">Bàn ghế, Sofa</a>
+                    </li>
+
+                    <li>
+                        <a href="../CayTrangTri.html">Cây trang trí</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">Tin tức</a>
+            </li>
+            <li class="nav__item">
+                <a href="#footer" class="nav__link">Liên hệ</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!-- Main -->
+    <main>
+        <div class="item">
+            <div class="item__container">
+                <div class="item__img">
+                    <div class="item__img--large">
+                        <span onclick="this.parentElement.style.display='none'"></span>
+                        <img src="../img/TranhTreoTuong/TTT-03-dongvathoathinh.jpg" alt="" id="expandImg">
+                    </div>
+    
+                    <div class="item__img--small">
+                        <div class="item__img--smaller">
+                            <img src="../img/TranhTreoTuong/TTT-03-dongvathoathinh.jpg" onclick="mythumb(this);">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item__content">
+                    <div class="item__info">
+                        <p class="title">Tranh treo tường TTT-03</p>
+                        <p class="price">320.000 VNĐ</p>
+                    </div>
+    
+                    <div class="item__desc">
+                        <ul>
+                            <li>
+                                <p>Chất liệu:</p>
+                                <p>Cotton Canvas, gỗ thông.</p>
+                            </li>
+    
+                            <li>
+                                <p>Kích thước: </p>
+                                <p></p>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="buttons_added">
+                        <label for="">Số lượng</label>
+                        <input aria-label="quantity" class="input-qty" max="5" min="1" name="" type="number" value="1">
+                    </div>
+    
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- footer -->
+    <footer id="footer" class="footer">
+        <div class="footer__content">
+            <div class="footer__content--contact">
+                <h5>THÔNG TIN LIÊN HỆ</h5>
+                <div class="footer__list">
+                    <div class="footer__item">
+                        <i class="fas fa-home"></i>
+                        Km 10- Học Viện Công nghệ Bưu chính Viễn thông
+                    </div>
+
+                    <div class="footer__item">
+                        <i class="fa fa-envelope"></i>
+                        shopdecor2020@gmail.com
+                    </div>
+
+                    <div class="footer__item">
+                        <i class="fa fa-phone fa-flip-horizontal"></i>
+                        096 229 8888
+                    </div>
+
+                    <div class="footer__item">
+                        <i class="fas fa-clock"></i>
+                        Thời gian làm việc: 8:00 - 18:30 Thứ 2 - Chủ nhật
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content--product">
+                <h5>SẢN PHẨM</h5>
+                <ul>
+                    <li>
+                        <a href="#">Tranh treo tường</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Thảm lót sàn</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Đồ trang trí</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Kệ & tủ</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Bàn ghế, Sofa</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Cây trang trí</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content--policy">
+                <h5>CHÍNH SÁCH</h5>
+                <ul>
+                    <li>Miễn phí vận chuyển tại Hà Nội với đơn hàng trên 1 triệu đồng</li>
+                    <li>Miễn phí lắp đặt nội thành Hà Nội</li>
+                    <li>Bảo hành 5 năm và bảo trì sản phẩm</li>
+                </ul>
+            </div>
+            <div class="footer__content--more">
+                <a href="https://www.google.com/maps/place/H%E1%BB%8Dc+Vi%E1%BB%87n+CN+B%C6%B0u+Ch%C3%ADnh+Vi%E1%BB%85n+Th%C3%B4ng+-+H%C3%A0+%C4%90%C3%B4ng/@20.9805459,105.7857099,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acce762c2bb9:0xbb64e14683ccd786!8m2!3d20.9805409!4d105.7878986?hl=vi-VN">
+                    <img src="./img/map.jpg" alt="Map">
+                </a>
+            </div>
+        </div>
+        <div class="footer__coppyright">
+            <p> CoppyRight 2020 <i class="far fa-copyright"></i> DecorShop</p>
+        </div>
+    </footer>
+
+    <script src="../js/showPhotoItem.js"></script>
+</body>
+</html>
