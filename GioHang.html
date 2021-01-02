@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/GioHang.css">
+</head>
+<body style="background-color: rgba(245, 245, 245, 1);">
+    <script src="./cart.js"></script>
+    <header class="header-cart" id="top-cart">
+        <div class="header-cart__top"></div>
+        <a href="./index.html"><img src="./img/konn.png" alt="Logo" width="110px" height="100px"></a>
+        <span class="header-cart__name"><p style="font-size: 24PX;">| GIỎ HÀNG</p></span>
+
+        
+        <div class="header-cart__search">
+            <form action="">
+                <input type="search" name="" id="" placeholder="Search...">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div> 
+       
+    </header>
+
+    <!-- cart items details -->
+    <div class="small-container cart-page">
+        <table id="cart-table">
+            <tr style="background-color: #eee;">
+                <th style="text-align: left;">Sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thao tác</th>
+                <th>Số tiền</th>
+            </tr>
+            <hr>
+            <tr>
+                <td>
+                    <div class="cart-infor">
+                        <img src="./img/TranhTreoTuong/TTT-01.jpg" alt="Tranh" width="100px" height="100px">
+                        <div style="padding-top: 25px; padding-left: 10px">
+                            <p>Bộ 3 tranh treo tường TTT-01</p>
+                        </div>
+                    </div>
+                </td>
+                <td id="giaItem1">300.000</td>
+                <td><input type="number" value="1" min="1" id="count1" onchange="countItem()"></td>
+                <td><a href="#" onclick="deleteItem(this)">Xóa</a></td>
+                <td style="margin-top: 40px;"><p id="price-item1">300.000</p></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-infor">
+                        <img src="./img/DoTrangTri/DTT-02-CocCoNap-XuongRong.jpg" alt="Cốc" width="100px" height="100px">
+                        <div style="padding-top: 25px; padding-left: 10px">
+                            <p>Cốc xinh xắn DTT-02</p>
+                        </div>
+                    </div>
+                </td>
+                <td>50.000</td>
+                <td><input type="number" value="1" min="1"></td>
+                <td><a href="#" onclick="deleteItem(this)">Xóa</a></td>
+                <td style="margin-top: 40px;">50.000</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-infor">
+                        <img src="./img/KeVaTu/KT-03-KeLucGiac-White.jpg" alt="Kệ treo tường" width="100px" height="100px">
+                        <div style="padding-top: 25px; padding-left: 10px">
+                            <p>Kệ treo tường KT-02</p>
+                        </div>
+                    </div>
+                </td>
+                <td>680.000</td>
+                <td><input type="number" value="1" min="1"></td>
+                <td><a href="#" onclick="deleteItem(this)">Xóa</a></td>
+                <td style="margin-top: 40px;">680.000</td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-infor">
+                        <img src="./img/BanGheSofa/BG-02.jpg" alt="Tranh" width="100px" height="100px">
+                        <div style="padding-top: 25px; padding-left: 10px">
+                            <p>Bàn phòng khách BG-02</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1.600.000</td>
+                <td><input type="number" value="1" min="1"></td>
+                <td><a href="#" onclick="deleteItem(this)">Xóa</a></td>
+                <td style="margin-top: 40px;">1.600.000</td>
+            </tr>
+          
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>2.630.000</td>
+                </tr>
+
+                <tr>
+                    <td>Tax</td>
+                    <td>30.000</td>
+                </tr>
+
+                <tr>
+                    <td>Total</td>
+                    <td>2.660.000</td>
+                </tr>
+            </table>
+        </div>
+        <button class="btn-buyItems" onclick="noticeBoughtItems()">Mua Hàng</button>
+    </div>
+     
+     <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer__content">
+            <div class="footer__content--contact">
+                <h5>THÔNG TIN LIÊN HỆ</h5>
+                <div class="footer__list">
+                    <div class="footer__item">
+                        <i class="fas fa-home"></i>
+                        Km 10- Học Viện Công nghệ Bưu chính Viễn thông
+                    </div>
+
+                    <div class="footer__item">
+                        <i class="fa fa-envelope"></i>
+                        shopdecor2020@gmail.com
+                    </div>
+
+                    <div class="footer__item">
+                        <i class="fa fa-phone fa-flip-horizontal"></i>
+                        096 229 8888
+                    </div>
+
+                    <div class="footer__item">
+                        <i class="fas fa-clock"></i>
+                        Thời gian làm việc: 8:00 - 18:30 Thứ 2 - Chủ nhật
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content--product">
+                <h5>SẢN PHẨM</h5>
+                <ul>
+                    <li>
+                        <a href="#">Tranh treo tường</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Thảm lót sàn</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Đồ trang trí</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Kệ & tủ</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Bàn ghế, Sofa</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Cây trang trí</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content--policy">
+                <h5>CHÍNH SÁCH</h5>
+                <ul>
+                    <li>Miễn phí vận chuyển tại Hà Nội với đơn hàng trên 1 triệu đồng</li>
+                    <li>Miễn phí lắp đặt nội thành Hà Nội</li>
+                    <li>Bảo hành 5 năm và bảo trì sản phẩm</li>
+                </ul>
+            </div>
+            <div class="footer__content--more">
+                <a href="https://www.google.com/maps/place/H%E1%BB%8Dc+Vi%E1%BB%87n+CN+B%C6%B0u+Ch%C3%ADnh+Vi%E1%BB%85n+Th%C3%B4ng+-+H%C3%A0+%C4%90%C3%B4ng/@20.9805459,105.7857099,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acce762c2bb9:0xbb64e14683ccd786!8m2!3d20.9805409!4d105.7878986?hl=vi-VN">
+                    <img src="./img/map.jpg" alt="Map">
+                </a>
+            </div>
+        </div>
+        <div class="footer__coppyright">
+            <p> CoppyRight 2020 <i class="far fa-copyright"></i> DecorShop</p>
+        </div>
+    </footer>
+    <script src="/js/GioHang.js"></script>
+</body>
+
+</html>
