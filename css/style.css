@@ -730,3 +730,19 @@ body {
     line-height: 40px;
     text-align: center;
 }
+
+/* back to top */
+#btnScrollToTop {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgb(230, 221, 221);
+	outline: none;
+}
+
+#btnScrollToTop:active {
+	background-color: #5f5a5a;
+}
