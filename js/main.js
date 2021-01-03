@@ -74,3 +74,13 @@ function showTTT(n) {
   }
   slides[slideID-1].style.display = "flex";  
 }
+
+// chuyển giao diện
+
+function showTH(){
+  window.location.assign("index.html")
+}
+
+function showListTH(){
+  window.location.assign("Trangchu.html")
+}
